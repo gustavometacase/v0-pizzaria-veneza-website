@@ -10,6 +10,7 @@ import { Reviews } from "@/components/reviews"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
 import { WhatsAppButton } from "@/components/whatsapp-button"
+import { OrderOptions } from "@/components/order-options"
 
 export default function HomePage() {
   return (
@@ -19,6 +20,7 @@ export default function HomePage() {
         <Hero />
         <About />
         <MenuSection />
+        <OrderOptions />
         <Reservations />
         <Reviews />
         <Contact />

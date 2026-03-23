@@ -10,12 +10,12 @@ export function Contact() {
     {
       icon: MapPin,
       label: t("contact.address"),
-      value: "Rua Example, 123\n1234-567 Cidade, Portugal",
+      value: "Av. Dr. António Rodrigues Manito 101\n2900-068 Setúbal",
     },
     {
       icon: Phone,
       label: t("contact.phone"),
-      value: "+351 XXX XXX XXX",
+      value: "265 552 013",
     },
     {
       icon: Mail,
@@ -104,7 +104,7 @@ export function Contact() {
                   <Facebook className="h-5 w-5" />
                 </a>
                 <a
-                  href="https://wa.me/351XXXXXXXXX"
+                  href="https://wa.me/351265552013"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-background border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors"

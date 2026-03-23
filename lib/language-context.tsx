@@ -69,6 +69,12 @@ const translations: Record<Language, Record<string, string>> = {
     "contact.email": "Email",
     "contact.hours": "Horário",
     
+    // Order
+    "order.title": "Faça o Seu Pedido",
+    "order.subtitle": "Entregas e Encomendas",
+    "order.phone.label": "Ligue para encomendar",
+    "order.apps.label": "Ou peça através das nossas apps de entrega:",
+    
     // Footer
     "footer.rights": "Todos os direitos reservados",
     
@@ -137,6 +143,12 @@ const translations: Record<Language, Record<string, string>> = {
     "contact.phone": "Phone",
     "contact.email": "Email",
     "contact.hours": "Hours",
+    
+    // Order
+    "order.title": "Place Your Order",
+    "order.subtitle": "Delivery & Takeaway",
+    "order.phone.label": "Call to order",
+    "order.apps.label": "Or order through our delivery apps:",
     
     // Footer
     "footer.rights": "All rights reserved",

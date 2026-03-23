@@ -7,7 +7,7 @@ import { MessageCircle, Clock } from "lucide-react"
 export function Reservations() {
   const { t } = useLanguage()
 
-  const whatsappNumber = "351XXXXXXXXX" // Replace with actual number
+  const whatsappNumber = "351265552013"
   const whatsappMessage = encodeURIComponent("Olá! Gostaria de fazer uma reserva.")
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`
 
