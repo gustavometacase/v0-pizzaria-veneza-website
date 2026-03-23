@@ -25,7 +25,7 @@ export function Contact() {
     {
       icon: Clock,
       label: t("contact.hours"),
-      value: "Seg-Sex: 12h-15h, 19h-23h\nSáb-Dom: 12h-23h",
+      value: "Seg-Sáb: 12h-14h30, 19h-22h\nDomingo: Encerrado",
     },
   ]
 
@@ -46,7 +46,7 @@ export function Contact() {
           {/* Map */}
           <div className="aspect-[4/3] lg:aspect-auto lg:min-h-[400px] rounded-2xl overflow-hidden shadow-lg">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.123456789!2d-8.123456789!3d38.123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDA3JzI0LjAiTiA4wrAwNyczNi4wIlc!5e0!3m2!1sen!2spt!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.8!2d-8.8939!3d38.5244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1943b45c7d8b1d%3A0x4b6c5f1234567890!2sAv.%20Dr.%20Ant%C3%B3nio%20Rodrigues%20Manito%20101%2C%202900-068%20Set%C3%BAbal!5e0!3m2!1spt-PT!2spt!4v1710000000000"
               width="100%"
               height="100%"
               style={{ border: 0 }}
