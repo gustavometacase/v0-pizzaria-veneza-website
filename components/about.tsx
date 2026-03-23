@@ -40,16 +40,14 @@ export function About() {
             </p>
 
             {/* Features */}
-            <div className="grid sm:grid-cols-3 gap-6">
+            <div className="flex flex-wrap justify-center gap-3 md:gap-6">
               {features.map((feature, index) => (
                 <div
                   key={index}
-                  className="flex flex-col items-center text-center p-4 bg-secondary rounded-xl"
+                  className="flex items-center gap-2 px-3 py-2 md:px-4 md:py-3 bg-secondary rounded-full"
                 >
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-3">
-                    <feature.icon className="h-6 w-6 text-primary" />
-                  </div>
-                  <span className="text-sm font-medium text-foreground">
+                  <feature.icon className="h-4 w-4 md:h-5 md:w-5 text-primary" />
+                  <span className="text-xs md:text-sm font-medium text-foreground">
                     {feature.label}
                   </span>
                 </div>
