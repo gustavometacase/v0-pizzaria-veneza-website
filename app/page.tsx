@@ -19,8 +19,8 @@ export default function HomePage() {
       <main>
         <Hero />
         <About />
-        <MenuSection />
         <OrderOptions />
+        <MenuSection />
         <Reservations />
         <Reviews />
         <Contact />
