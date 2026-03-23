@@ -19,6 +19,7 @@ export interface SauceOption {
 }
 
 export const pizzas: MenuItem[] = [
+  { name: "Veneza (Especial da Casa)", description: "Fiambre, milho, mozarela, paio, oregãos e azeitonas", prices: { mini: "XX€", small: "XX€", medium: "XX€", family: "XX€" } },
   { name: "Quatro Queijos", description: "Mozarela, queijo fundido, roquefort, queijo gordo, azeitona e oregãos", prices: { mini: "XX€", small: "XX€", medium: "XX€", family: "XX€" } },
   { name: "Anchovas", description: "Mozarela, anchovas, azeitonas e tomate", prices: { mini: "XX€", small: "XX€", medium: "XX€", family: "XX€" } },
   { name: "Atum", description: "Mozarela, atum, cebola, azeitonas, oregãos, milho e cogumelos", prices: { mini: "XX€", small: "XX€", medium: "XX€", family: "XX€" } },
@@ -43,7 +44,6 @@ export const pizzas: MenuItem[] = [
   { name: "Portuguesa", description: "Fiambre, mozarela, ervilha, ovo, cebola, pimentos, oregãos e azeitonas", prices: { mini: "XX€", small: "XX€", medium: "XX€", family: "XX€" } },
   { name: "Setubalense", description: "Atum, ervilhas, cebola, pimentos, mozarela, oregãos e azeitonas", prices: { mini: "XX€", small: "XX€", medium: "XX€", family: "XX€" } },
   { name: "Tropical", description: "Leite condensado, pêssego, ananás, mozarela e canela", prices: { mini: "XX€", small: "XX€", medium: "XX€", family: "XX€" } },
-  { name: "Veneza (Especial da Casa)", description: "Fiambre, milho, mozarela, paio, oregãos e azeitonas", prices: { mini: "XX€", small: "XX€", medium: "XX€", family: "XX€" } },
   { name: "4 Estações", description: "Mexicana, chouriço, napolitana e portuguesa", prices: { mini: "XX€", small: "XX€", medium: "XX€", family: "XX€" } },
   { name: "Queijo e Fiambre", description: "Queijo, fiambre, azeitonas e oregãos", prices: { mini: "XX€", small: "XX€", medium: "XX€", family: "XX€" } },
 ]
