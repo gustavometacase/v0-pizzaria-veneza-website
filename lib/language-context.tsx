@@ -53,8 +53,7 @@ const translations: Record<Language, Record<string, string>> = {
     "reservations.description": "Reserve a sua mesa pelo WhatsApp — respondemos rapidamente!",
     "reservations.cta": "Reservar via WhatsApp",
     "reservations.hours": "Horário de Funcionamento",
-    "reservations.hours.weekdays": "Segunda a Sexta",
-    "reservations.hours.weekend": "Sábado e Domingo",
+    "reservations.hours.weekdays": "Segunda a Sábado",
     
     // Reviews
     "reviews.title": "Avaliações",
@@ -128,8 +127,7 @@ const translations: Record<Language, Record<string, string>> = {
     "reservations.description": "Book your table via WhatsApp — we respond quickly!",
     "reservations.cta": "Book via WhatsApp",
     "reservations.hours": "Opening Hours",
-    "reservations.hours.weekdays": "Monday to Friday",
-    "reservations.hours.weekend": "Saturday and Sunday",
+    "reservations.hours.weekdays": "Monday to Saturday",
     
     // Reviews
     "reviews.title": "Reviews",

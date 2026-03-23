@@ -44,19 +44,11 @@ export function Reservations() {
               <Clock className="h-6 w-6" />
               <h3 className="font-serif text-2xl font-bold">{t("reservations.hours")}</h3>
             </div>
-            <div className="grid sm:grid-cols-2 gap-6">
-              <div className="bg-primary-foreground/5 rounded-xl p-4">
-                <span className="text-sm text-primary-foreground/70 block mb-1">
-                  {t("reservations.hours.weekdays")}
-                </span>
-                <span className="text-lg font-semibold">12:00 - 15:00 | 19:00 - 23:00</span>
-              </div>
-              <div className="bg-primary-foreground/5 rounded-xl p-4">
-                <span className="text-sm text-primary-foreground/70 block mb-1">
-                  {t("reservations.hours.weekend")}
-                </span>
-                <span className="text-lg font-semibold">12:00 - 23:00</span>
-              </div>
+            <div className="bg-primary-foreground/5 rounded-xl p-4 max-w-md mx-auto">
+              <span className="text-sm text-primary-foreground/70 block mb-1">
+                {t("reservations.hours.weekdays")}
+              </span>
+              <span className="text-lg font-semibold">12:00 - 14:30 | 19:00 - 22:00</span>
             </div>
           </div>
         </div>
