@@ -11,19 +11,19 @@ export function OrderOptions() {
       name: "Glovo",
       color: "bg-[#FFC244]",
       textColor: "text-black",
-      url: "https://glovoapp.com/pt/pt/setubal/pizzaria-veneza/",
+      url: "https://glovoapp.com/pt/pt/setubal/pizzaria-veneza-stu/",
     },
     {
       name: "Uber Eats",
       color: "bg-[#06C167]",
       textColor: "text-white",
-      url: "https://www.ubereats.com/pt/store/pizzaria-veneza/",
+      url: "https://www.ubereats.com/pt/store/pizzaria-veneza/FfpA2YYeWJShnA_UDFOEsA",
     },
     {
       name: "Bolt Food",
       color: "bg-[#34D186]",
       textColor: "text-white",
-      url: "https://food.bolt.eu/pt-PT/137-setubal/p/pizzaria-veneza/",
+      url: "https://food.bolt.eu/pt-PT/137/p/pizzaria-veneza/",
     },
   ]
 
