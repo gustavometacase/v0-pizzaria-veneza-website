@@ -65,17 +65,6 @@ function PizzasTab() {
 
   return (
     <div>
-      {/* Size Legend */}
-      <div className="flex flex-wrap justify-center gap-4 mb-8 p-4 bg-background rounded-xl">
-        <span className="text-sm font-medium text-foreground">{t("menu.sizes")}:</span>
-        <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
-          <span className="px-3 py-1 bg-secondary rounded-full">{t("menu.mini")}</span>
-          <span className="px-3 py-1 bg-secondary rounded-full">{t("menu.small")}</span>
-          <span className="px-3 py-1 bg-secondary rounded-full">{t("menu.medium")}</span>
-          <span className="px-3 py-1 bg-secondary rounded-full">{t("menu.family")}</span>
-        </div>
-      </div>
-
       {/* Pizza Grid */}
       <div className="grid md:grid-cols-2 gap-4">
         {pizzas.map((pizza, index) => (
@@ -95,21 +84,7 @@ function PizzasTab() {
                 )}
               </h3>
             </div>
-            <p className="text-sm text-muted-foreground mb-3">{pizza.description}</p>
-            <div className="flex gap-2 text-xs">
-              <span className="px-2 py-1 bg-secondary rounded text-foreground/70">
-                {pizza.prices?.mini}
-              </span>
-              <span className="px-2 py-1 bg-secondary rounded text-foreground/70">
-                {pizza.prices?.small}
-              </span>
-              <span className="px-2 py-1 bg-secondary rounded text-foreground/70">
-                {pizza.prices?.medium}
-              </span>
-              <span className="px-2 py-1 bg-secondary rounded text-foreground/70">
-                {pizza.prices?.family}
-              </span>
-            </div>
+            <p className="text-sm text-muted-foreground">{pizza.description}</p>
           </div>
         ))}
       </div>
