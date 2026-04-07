@@ -28,34 +28,34 @@ export function OrderOptions() {
   ]
 
   return (
-    <section className="py-16 bg-background">
+    <section className="py-10 sm:py-16 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           {/* Header */}
-          <div className="flex items-center justify-center gap-2 mb-3">
-            <Bike className="h-6 w-6 text-primary" />
-            <span className="text-accent font-medium uppercase tracking-wider text-sm">
+          <div className="flex items-center justify-center gap-2 mb-2 sm:mb-3">
+            <Bike className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
+            <span className="text-accent font-medium uppercase tracking-wider text-xs sm:text-sm">
               {t("order.subtitle")}
             </span>
           </div>
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-8">
+          <h2 className="font-serif text-xl sm:text-3xl md:text-4xl font-bold text-foreground mb-6 sm:mb-8">
             {t("order.title")}
           </h2>
 
           {/* Phone Order */}
-          <div className="mb-10 p-6 bg-secondary rounded-2xl">
+          <div className="mb-6 sm:mb-10 p-4 sm:p-6 bg-secondary rounded-xl sm:rounded-2xl">
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                  <Phone className="h-6 w-6 text-primary" />
+                <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Phone className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <span className="text-sm text-muted-foreground block">
+                  <span className="text-xs sm:text-sm text-muted-foreground block">
                     {t("order.phone.label")}
                   </span>
                   <a
                     href="tel:+351265552013"
-                    className="text-xl font-bold text-foreground hover:text-primary transition-colors"
+                    className="text-base sm:text-xl font-bold text-foreground hover:text-primary transition-colors"
                   >
                     265 552 013
                   </a>
@@ -65,15 +65,15 @@ export function OrderOptions() {
           </div>
 
           {/* Delivery Apps */}
-          <p className="text-muted-foreground mb-6">{t("order.apps.label")}</p>
-          <div className="flex flex-wrap justify-center gap-4">
+          <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6">{t("order.apps.label")}</p>
+          <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
             {deliveryApps.map((app) => (
               <a
                 key={app.name}
                 href={app.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`${app.color} ${app.textColor} px-8 py-4 rounded-xl font-bold text-lg hover:opacity-90 transition-opacity shadow-md hover:shadow-lg`}
+                className={`${app.color} ${app.textColor} px-5 sm:px-8 py-3 sm:py-4 rounded-lg sm:rounded-xl font-bold text-sm sm:text-lg hover:opacity-90 transition-opacity shadow-md hover:shadow-lg`}
               >
                 {app.name}
               </a>
