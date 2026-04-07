@@ -9,7 +9,7 @@ import { Reservations } from "@/components/reservations"
 import { Reviews } from "@/components/reviews"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
-import { WhatsAppButton } from "@/components/whatsapp-button"
+
 import { OrderOptions } from "@/components/order-options"
 
 export default function HomePage() {
@@ -26,7 +26,6 @@ export default function HomePage() {
         <Contact />
       </main>
       <Footer />
-      <WhatsAppButton />
     </LanguageProvider>
   )
 }

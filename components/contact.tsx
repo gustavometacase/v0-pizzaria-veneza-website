@@ -30,21 +30,21 @@ export function Contact() {
   ]
 
   return (
-    <section id="contact" className="py-20 md:py-32 bg-secondary">
+    <section id="contact" className="py-12 sm:py-20 md:py-32 bg-secondary">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-12">
-          <span className="text-accent font-medium uppercase tracking-wider text-sm">
+        <div className="text-center mb-8 sm:mb-12">
+          <span className="text-accent font-medium uppercase tracking-wider text-xs sm:text-sm">
             {t("contact.subtitle")}
           </span>
-          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mt-3">
+          <h2 className="font-serif text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mt-2 sm:mt-3">
             {t("contact.title")}
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-6 sm:gap-10 max-w-6xl mx-auto">
           {/* Map */}
-          <div className="aspect-[4/3] lg:aspect-auto lg:min-h-[400px] rounded-2xl overflow-hidden shadow-lg">
+          <div className="aspect-[4/3] lg:aspect-auto lg:min-h-[400px] rounded-xl sm:rounded-2xl overflow-hidden shadow-md sm:shadow-lg">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.8!2d-8.8939!3d38.5244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1943b45c7d8b1d%3A0x4b6c5f1234567890!2sAv.%20Dr.%20Ant%C3%B3nio%20Rodrigues%20Manito%20101%2C%202900-068%20Set%C3%BAbal!5e0!3m2!1spt-PT!2spt!4v1710000000000"
               width="100%"
@@ -59,20 +59,20 @@ export function Contact() {
           </div>
 
           {/* Contact Info */}
-          <div className="space-y-6">
+          <div className="space-y-4 sm:space-y-6">
             {contactInfo.map((info, index) => (
               <div
                 key={index}
-                className="flex gap-4 p-4 bg-background rounded-xl border border-border"
+                className="flex gap-3 sm:gap-4 p-3 sm:p-4 bg-background rounded-lg sm:rounded-xl border border-border"
               >
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <info.icon className="h-6 w-6 text-primary" />
+                <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <info.icon className="h-4 w-4 sm:h-6 sm:w-6 text-primary" />
                 </div>
                 <div>
-                  <span className="text-sm text-muted-foreground block mb-1">
+                  <span className="text-xs sm:text-sm text-muted-foreground block mb-1">
                     {info.label}
                   </span>
-                  <span className="font-medium text-foreground whitespace-pre-line">
+                  <span className="text-sm sm:text-base font-medium text-foreground whitespace-pre-line">
                     {info.value}
                   </span>
                 </div>
@@ -80,40 +80,30 @@ export function Contact() {
             ))}
 
             {/* Social Links */}
-            <div className="pt-4">
-              <span className="text-sm text-muted-foreground block mb-4">
+            <div className="pt-3 sm:pt-4">
+              <span className="text-xs sm:text-sm text-muted-foreground block mb-3 sm:mb-4">
                 Siga-nos nas redes sociais
               </span>
-              <div className="flex gap-4">
+              <div className="flex gap-3 sm:gap-4">
                 <a
                   href="https://instagram.com/pizzariaveneza"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 rounded-full bg-background border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors"
+                  className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-background border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors"
                   aria-label="Instagram"
                 >
-                  <Instagram className="h-5 w-5" />
+                  <Instagram className="h-4 w-4 sm:h-5 sm:w-5" />
                 </a>
                 <a
                   href="https://facebook.com/pizzariaveneza"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 rounded-full bg-background border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors"
+                  className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-background border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors"
                   aria-label="Facebook"
                 >
-                  <Facebook className="h-5 w-5" />
+                  <Facebook className="h-4 w-4 sm:h-5 sm:w-5" />
                 </a>
-                <a
-                  href="https://wa.me/351265552013"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 rounded-full bg-background border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors"
-                  aria-label="WhatsApp"
-                >
-                  <svg viewBox="0 0 24 24" className="h-5 w-5 fill-current">
-                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-                  </svg>
-                </a>
+
               </div>
             </div>
           </div>

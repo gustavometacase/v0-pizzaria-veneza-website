@@ -11,7 +11,7 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Logo */}
-          <div className="font-serif text-2xl font-bold">Pizzaria Veneza</div>
+          <div className="font-serif text-lg sm:text-2xl font-bold">Pizzaria Veneza</div>
 
           {/* Copyright */}
           <p className="text-sm text-background/70 text-center">
